@@ -1,0 +1,113 @@
+body {
+    margin: 0px 0px 100px 0px;
+    font-family: 'Noto Serif', serif;
+
+    background-color: #3c3f41;
+}
+
+#page-header {
+    width: 100%;
+
+
+    background-color: rgba(153, 153, 153, 0.4);
+
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+#page-header > nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+#page-header > nav > ul > li {
+    margin: 0 15px 0 0;
+    padding: 0;
+    display: inline;
+}
+#page-header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#page-header > nav > a {
+    text-decoration: none;
+    color: white;
+}
+#info {
+    width: 80%;;
+    font-size: larger;
+    margin: 0 auto;
+}
+#info p {
+    text-align: justify;
+}
+#info a {
+    background-color: rgba(153, 153, 153, 0.4);
+}
+
+#info aside {
+    float: right;
+    max-width: 25%;
+    margin: 0 0 3% 3%
+}
+
+#bio-info {
+    width: 80%;;
+    font-size: larger;
+    margin: 0 auto;
+}
+#bio-info p {
+    text-align: justify;
+}
+#bio-info a {
+    background-color: rgba(153, 153, 153, 0.4);
+}
+.ee{
+    color: #e1e1e3;
+}
+#bio-info aside {
+    float: right;
+    max-width: 20%;
+    margin: 0 0 1% 2%
+}
+#kira-figure {
+    margin: auto;
+}
+#kira-figure img {
+    width: 100%;
+}
+
+#kira-figure figcaption {
+    text-align: right;
+}
+
+#light-figure {
+    text-align: right;
+    margin: auto;
+}
+#light-figure img {
+    height: 400px;
+}
+
+#light-figure figcaption {
+    text-align: center;
+}
+
+
+#page-footer {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(153, 153, 153, 0.4);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#page-footer a {
+    text-decoration: none;
+    color: white;
+}

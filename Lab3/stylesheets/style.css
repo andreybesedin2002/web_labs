@@ -1,0 +1,88 @@
+body {
+    margin: auto;
+    min-height: 100vh;
+    background-color: #3c3f41;
+    font-family: 'Noto Serif', serif;
+}
+
+.header .container {
+    height: 60px;
+    background-color: rgba(153, 153, 153, 0.4);
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.24);
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav a {
+	display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    padding: .4em 1.5em;
+    color: #e1e1e3;
+    text-decoration: none;
+}
+.page-content{
+
+}
+
+main {  
+    color: #e1e1e3;
+    min-height: 100vh;
+} 
+
+.sect-title {
+    margin-top: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.cards {/*
+height: 370px;
+    width: 300em;
+    overflow-x: auto;*/
+/*    white-space: nowrap;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+
+    gap: 40px;
+    white-space: nowrap;
+
+    /*
+
+   */
+}
+
+.cards_item {
+    /* There will be 4 cards per row */
+ /*   display: flex;*/
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 40px;
+    height: fit-content;
+
+}
+.cards_item a {
+    text-decoration: inherit;
+    color: inherit;
+}
+.cards_item img {
+    width: 100%;
+    height: 318px;
+    object-fit: contain;
+}
+
+.details {
+    text-align: center;
+    font-weight: bold;
+}

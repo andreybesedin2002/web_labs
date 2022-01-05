@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <header id="page-header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Обратная связь</a>
+                </li>
+                <li>
+                    <a href="auth.html">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="h-form" >Форма обратной связи</div>
+        <div >
+        <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data" id="form">
+
+            <div class="form-group">
+                <label for="#fio">
+                    <p>ФИО</p>
+                </label>
+                <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович">
+            </div>
+
+            <div class="form-group">
+                <label for="#email">
+                    <p>Email</p>
+                </label>
+                <input type="email" name="email" id="email" placeholder="exmaple@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <p>Как вы о нас узнали?</p>
+                <input type="radio" name="source" id="advertising" value="advertising">
+                <label for="#advertising">Реклама</label>
+
+                <input type="radio" name="source" id="friends" value="friends">
+                <label for="#friends">Друзья</label>
+
+            </div>
+
+            <div class="form-group">
+                <label for="#category" id="category-label">
+                    <p>Тип обращения</p>
+                </label>
+
+                <select name="category" id="category">
+                    <option value="proposal">Предложение</option>
+                    <option value="feedback" selected>Жалоба</option>
+                    <option value="feedback" selected>Жалоба</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="#msg">
+                    <p>Текст сообщения</p>
+                </label>
+                <textarea name="msg" id="msg" cols="30" rows="10"
+                    placeholder="Напишите свое сообщение здесь..."></textarea>
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="checkbox" name="agreement" id="agreement" value="yes" required>
+                <label for="agreement">Согласен на обработку данных</label>
+            </div>
+            <div class="form-group">
+                <label for="#attachment">
+                    <p>Вложение</p>
+                </label>
+                <input type="file" name="attachment" id="attachment">
+            </div>
+
+            <input type="submit" value="Отправить" id="send-btn">
+        </form>
+        </div>
+    </main>
+
+    <footer id="page-footer">
+        <p>&copy;2021 Беседин А.Г.</p>
+        <p><a href="mailto:becedingenrix@gmail.com">becedingenrix@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
